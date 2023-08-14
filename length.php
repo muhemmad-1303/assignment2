@@ -136,6 +136,10 @@
                         <option value="mile" selected>mile</option>
                         <?php }?>
                        </select>
+                       <div class='subres'>
+                     <input type="submit" value="=">
+                     <input type="text" name="invalue" value=<?php echo $rval; ?>>
+                     </div>
                        <?php }
                          else{
                          ?>
@@ -151,9 +155,14 @@
                           <option value="mile">mile</option>
             
                        </select>
+                       <div class="subres">
+                       <input type="submit" value="=">
+                       <input type="text"  maxlength="0">
+                       
+                       </div>
 
                         <?php } ?>
-                        <input type="submit" value="=">
+                        
                         <a href="length.php">clear </a>
                           
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="time.css">
+    <link rel="stylesheet" href="unit.css">
 </head>
 <body>
     <div class="content">
@@ -80,7 +80,6 @@
                             
                             
                        ?>
-                       <input type="text" name="invalue" value=<?php echo $rval;?>>
                        <select name="outunit" id="">
                        <?php  
                            if($outunit=="sqmilli"){
@@ -112,23 +111,28 @@
                         ?>
                         <option value="houtunit" selected>hectare</option>
                         <?php } ?>
-                       
                        </select>
+                       <div class="subres">
+                       <input type="submit" value="=">
+                       <input type="text" name="invalue" value=<?php echo $rval; ?>>
+                       </div>
                        <?php }
                          else{
                          ?>
-                           <input type="text"  maxlength="0">
-                           <select name="outunit" id="">
-                           <option value="sqmilli">square millimeter</option>
-                          <option value="sqcm">square centimeter</option>
+                         <select name="outunit" id="">
+                         <option value="sqmilli">square millimeter</option>
+                         <option value="sqcm">square centimeter</option>
                          <option value="sqm">square meter</option>
                          <option value="sqkm">square kilometer</option>
                          <option value="acre">acre</option>
                          <option value="hectare">hectare</option>
                        </select>
+                       <div class="subres">
+                       <input type="submit" value="=">
+                       <input type="text"  maxlength="0">
+                       </div>
 
                         <?php } ?>
-                        <input type="submit" value="=">
                         <a href="area.php">clear </a>
                           
 

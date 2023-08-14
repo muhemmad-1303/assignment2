@@ -1,3 +1,8 @@
+body{
+    overflow: hidden;
+}
+
+
 a{
     all: unset;
 }
@@ -7,6 +12,7 @@ a{
     align-items: center;
     width: 100vw;
     height: 100vh;
+    
 }
 
 .calculatorbody {
@@ -42,6 +48,7 @@ a{
 .calculatorbody .content-box form .inputbox select,
 .calculatorbody .content-box form .inputbox input[type=submit],
 .calculatorbody .content-box form .inputbox a {
+    width: 100%;
     outline: 0;
     border-radius: 10px;
     border: 0;
@@ -100,7 +107,6 @@ a{
     font-size: 20px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    
     color:#393646;
 
 }
@@ -147,6 +153,10 @@ a{
 
 #unitconverter:hover .unititem{
     visibility: visible;
+}
+
+.subres{
+    display: flex;
 }
 
 

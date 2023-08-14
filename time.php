@@ -97,7 +97,6 @@
                             
                             
                        ?>
-                       <input type="text" name="invalue" value=<?php echo $rval;?>>
                        <select name="outunit" id="">
                         <?php  
                            if($outunit=="micro"){
@@ -145,10 +144,14 @@
                         <option value="year" selected>year</option>
                         <?php }?>
                        </select>
+                       <div class='subres'>
+                     <input type="submit" value="=">
+                     <input type="text" name="invalue" value=<?php echo $rval; ?>>
+                     </div>
                        <?php }
                          else{
                          ?>
-                           <input type="text"  maxlength="0">
+                        
                            <select name="outunit" id="">
                           <option value="micro">microsecond</option>
                           <option value="milli">millisecond</option>
@@ -160,12 +163,12 @@
                           <option value="month">month</option>
                          <option value="year">year</option>
                        </select>
-
+                     <div class="subres">
+                     <input type="submit" value="=">
+                     <input type="text" maxlength="0">
+                     </div>
                         <?php } ?>
-                        <input type="submit" value="=">
-                        <a href="time.php">clear </a>
-                          
-
+                        <a href="time.php">clear</a>
                   </div>
                   </form>
 

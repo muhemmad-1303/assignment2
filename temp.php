@@ -63,7 +63,6 @@
                             
                             
                        ?>
-                       <input type="text"  value=<?php echo $rval;?>>
                        <select name="outunit" id="">
                        <?php  
                            if($outunit=="celcius"){
@@ -80,25 +79,25 @@
                         ?>
                         <option value="fahrenheit" selected>fahrenheit</option>
                         <?php  } ?>
-                       
-                       
-                       </select>
+                        </select>
+                     <div class='subres'>
+                     <input type="submit" value="=">
+                     <input type="text" name="invalue" value=<?php echo $rval; ?>>
+                     </div>
                        <?php }
                          else{
                          ?>
-                           <input type="text"  maxlength="0">
                            <select name="outunit" id="">
                            <option value="celcius">celcius</option>
-                          <option value="kelvin">kelvin</option>
-                         <option value="fahrenheit">fahrenheit</option>
-                        
+                           <option value="kelvin">kelvin</option>
+                           <option value="fahrenheit">fahrenheit</option>
                        </select>
-
+                       <div class="subres">
+                         <input type="submit" value="=">
+                         <input type="text"  maxlength="0">
+                         </div>
                         <?php } ?>
-                        <input type="submit" value="=">
-                        <a href="temp.php">clear </a>
-                          
-
+                        <a href="temp.php">clear</a>
                   </div>
                   </form>
 
