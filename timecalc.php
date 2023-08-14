@@ -99,7 +99,7 @@ $result=0;
             $result=stomin($result);
         }
         else if($out_unit=="hour"){
-            $result=stohour($result);;
+            $result=stohr($result);;
         }
         else if($out_unit=="day"){
             $result=stoday($result);
@@ -124,7 +124,7 @@ $result=0;
             $result=stomin($result);
         }
         else if($out_unit=="hour"){
-            $result=stohour($result);;
+            $result=stohr($result);;
         }
         else if($out_unit=="day"){
             $result=stoday($result);
@@ -149,7 +149,7 @@ $result=0;
             $result=stoml($result);
         }
         else if($out_unit=="hour"){
-            $result=stohour($result);;
+            $result=stohr($result);;
         }
         else if($out_unit=="day"){
             $result=stoday($result);
@@ -163,7 +163,7 @@ $result=0;
         
     }
     else if($in_unit=="hour"){
-        $result=hourtos($in_tempvalue);
+        $result=hrtos($in_tempvalue);
         if($out_unit=="second"){
             $result=$result;
         }
@@ -199,7 +199,7 @@ $result=0;
             $result=stomin($result);
         }
         else if($out_unit=="hour"){
-            $result=stohour($result);;
+            $result=stohr($result);;
         }
         else if($out_unit=="milli"){
             $result=stoml($result);
@@ -213,7 +213,7 @@ $result=0;
         
     }
     else if($in_unit=="month"){
-        $result=monthtos($in_tempvalue);
+        $result=montos($in_tempvalue);
         if($out_unit=="second"){
             $result=$result;
         }
@@ -224,7 +224,7 @@ $result=0;
             $result=stomin($result);
         }
         else if($out_unit=="hour"){
-            $result=stohour($result);;
+            $result=stohr($result);;
         }
         else if($out_unit=="day"){
             $result=stoday($result);
@@ -249,7 +249,7 @@ $result=0;
             $result=stomin($result);
         }
         else if($out_unit=="hour"){
-            $result=stohour($result);;
+            $result=stohr($result);;
         }
         else if($out_unit=="day"){
             $result=stoday($result);

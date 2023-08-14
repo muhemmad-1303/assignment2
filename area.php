@@ -8,6 +8,7 @@
 </head>
 <body>
     <div class="content">
+       <?php include "nav.php"  ?>
         <div class="calculatorbody">
             <div class="content-box">
                   <h1>Area Conversion</h1>

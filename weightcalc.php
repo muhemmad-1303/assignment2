@@ -122,7 +122,7 @@ $result=0;
             $result=kgtogram($result);
         }
         else if($out_unit=="milligram"){
-            $result=kgtometric($result);
+            $result=kgtomilli($result);
         }
         else if($out_unit=="ton"){
             $result=kgtoton($result);
@@ -146,7 +146,7 @@ $result=0;
             $result=kgtometric($result);
         }
         else if($out_unit=="milligram"){
-            $result=kgtomilligram($result);
+            $result=kgtomilli($result);
         }
         else if($out_unit=="pound"){
             $result=kgtopound($result);
@@ -170,7 +170,7 @@ $result=0;
             $result=kgtoton($result);
         }
         else if($out_unit=="milligram"){
-            $result=kgtomilligram($result);
+            $result=kgtomilli($result);
         } 
         else if($out_unit=="ounce"){
             $result=kgtoounce($result);

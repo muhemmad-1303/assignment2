@@ -129,7 +129,7 @@ $result=0;
             $result=sqmtosqkm($result);
         }
         else if($out_unit=="sqmilli"){
-            $result=sqmtomilli($result);
+            $result=sqmtosqmilli($result);
         }
         else if($out_unit=="hectare"){
             $result=sqmtohecatare($result);
@@ -150,7 +150,7 @@ $result=0;
             $result=sqmtoacre($result);
         }
         else if($out_unit=="sqmilli"){
-            $result=sqmt0sqmilli($result);
+            $result=sqmtosqmilli($result);
         }    
     }
 

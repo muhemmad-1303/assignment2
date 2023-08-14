@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="time.css">
+    <link rel="stylesheet" href="unit.css">
 </head>
 <body>
     <div class="content">
+    <?php include "nav.php"  ?>
         <div class="calculatorbody">
             <div class="content-box">
                   <h1>Length Conversion</h1>
